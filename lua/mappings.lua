@@ -2,8 +2,6 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
--- Compile and Run node.js app 
-map("n", "<leader>rn", "<cmd> !npm start <CR>", { desc = "Compile and Run node.js" })
 -- Compile and Run C++ file
 map("n", "<leader>rr", "<cmd> !g++ -O3 -Wall -Wextra -Werror % -o %:r && ./%:r <CR>", { desc = "Compile and Run C++" })
 -- Debugging (DAP)
